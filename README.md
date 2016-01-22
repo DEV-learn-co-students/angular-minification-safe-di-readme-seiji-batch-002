@@ -1,0 +1,1 @@
+# angular-minification-safe-di-readme
