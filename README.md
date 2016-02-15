@@ -12,8 +12,23 @@ Dependency Injection is great but we can bite ourselves in the foot if we aren't
 
 ## Minification
 
-Minification is great - it reduces our code's file size and allows us to code wonderful things without impacting load times. However, it can cause a bit of an issue when mixed with dependency injection.
- 
+Minification is great - it reduces our code's file size and allows us to code wonderful things without impacting load times. It strips out all unneeded whitespace and punctuation in order to make our files as small as they can possibly be.
+
+For instance, a minifier might take this:
+
+```js
+function add(numberOne, numberTwo) {
+	return numberOne + numberTwo;
+}
+```
+
+And change it into:
+
+```js
+function add(a,b){return a+b;}
+```
+
+Much smaller! However, it can cause a bit of an issue when mixed with dependency injection.
 
 Most minify-ers change our variable names to single letters - it isn't important what our variables are called, only that they all still refer to the same object/method/function/etc. For example:
 
