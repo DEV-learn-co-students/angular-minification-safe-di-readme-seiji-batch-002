@@ -2,7 +2,7 @@
 
 ## Overview
 
-Dependency Injection is great but we can bite ourselves in the foot if we aren't careful. Let's have a look at how dependency injection can fail, and what we do to make things sweet again.
+Dependency Injection is great but we can shoot ourselves in the foot if we aren't careful. Let's have a look at how dependency injection can fail, and what we do to make things sweet again.
 
 ## Objectives
 
@@ -87,3 +87,4 @@ angular
 ``` 
 
 In our example above, the variable `whatever` is still equal to the value of `$scope` - just named differently! The same applies to the variable `weWant`. This means that our minification process will have no side effects to our code.
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-minification-safe-di-readme'>Angular Minification Safe Dependency Injection</a> on Learn.co and start learning to code for free.</p>
